@@ -112,10 +112,5 @@ Edit the design tokens at the top of `style.css`:
 | Safari | ✅ |
 | Mobile browsers | ✅ |
 
----
 
-## Author
 
-Built as **Task 3 — Web Application Training**.
-
-> Cooked with care — served with pride. 🍽️
