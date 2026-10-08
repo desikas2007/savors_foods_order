@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Savoré — fresh breakfast, lunch and dinner delivered daily. A clean, modern food website.">
+    <title>Savoré | Fresh Food, Every Day</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header" id="header">
+        <div class="container nav">
+            <a href="#home" class="logo">Savor<span>&eacute;</span></a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <a href="#contact" class="btn btn-primary nav-cta">Order Now</a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+        <div class="container hero-inner">
+            <div class="hero-content" data-reveal>
+                <span class="eyebrow">Welcome to Savor&eacute;</span>
+                <h1>Good food,<br>made fresh <em>daily</em>.</h1>
+                <p class="lead">
+                    From warm breakfasts to hearty dinners, our chefs cook every
+                    dish with hand-picked ingredients &mdash; served hot, delivered fast.
+                </p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#about" class="btn btn-ghost">Our Story</a>
+                </div>
+
+                <ul class="hero-stats">
+                    <li><strong>12+</strong><span>Years Cooking</span></li>
+                    <li><strong>45k</strong><span>Happy Customers</span></li>
+                    <li><strong>4.9</strong><span>Average Rating</span></li>
+                </ul>
+            </div>
+
+            <div class="hero-media" data-reveal>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
+                         alt="Freshly prepared dish served on a plate">
+                </div>
+                <div class="hero-badge">
+                    <span class="badge-number">100%</span>
+                    <span class="badge-text">Freshly<br>Cooked</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section" id="menu">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Today&rsquo;s Available</span>
+                <h2>Choose your meal of the day</h2>
+                <p>Three perfectly timed menus &mdash; cooked in the morning, noon and night.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="card" data-reveal>
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80"
+                             alt="French toast breakfast plate">
+                        <span class="card-tag">7:00 &ndash; 10:30 AM</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Breakfast</h3>
+                            <span class="price">from $6.90</span>
+                        </div>
+                        <p>Fluffy pancakes, eggs your way, fresh fruit bowls and hot coffee to start the day right.</p>
+                        <a href="#contact" class="card-link">Order breakfast &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="card card-featured" data-reveal>
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+                             alt="Healthy lunch bowl with vegetables">
+                        <span class="card-tag">12:00 &ndash; 3:00 PM</span>
+                        <span class="card-ribbon">Popular</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Lunch</h3>
+                            <span class="price">from $9.50</span>
+                        </div>
+                        <p>Grilled bowls, garden salads, artisan sandwiches and light plates that keep you going.</p>
+                        <a href="#contact" class="card-link">Order lunch &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="card" data-reveal>
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+                             alt="Elegant dinner dish in a restaurant">
+                        <span class="card-tag">6:00 &ndash; 10:00 PM</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Dinner</h3>
+                            <span class="price">from $12.90</span>
+                        </div>
+                        <p>Slow-cooked mains, seared steaks, pasta and seasonal specials made for the evening table.</p>
+                        <a href="#contact" class="card-link">Order dinner &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section section-alt" id="features">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Why Savor&eacute;</span>
+                <h2>Craft, quality and care on every plate</h2>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature" data-reveal>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-9.3-9.1C1.1 8.6 3 5 6.5 5 8.6 5 10 6.3 12 8.5 14 6.3 15.4 5 17.5 5 21 5 22.9 8.6 21.3 11.9 19 16.6 12 21 12 21z"/></svg>
+                    </div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Market-fresh produce and locally sourced meat, delivered to our kitchen every morning.</p>
+                </div>
+
+                <div class="feature" data-reveal>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+                    </div>
+                    <h3>30-Min Delivery</h3>
+                    <p>Hot meals at your door in half an hour, packed in insulated, eco-friendly boxes.</p>
+                </div>
+
+                <div class="feature" data-reveal>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21h10"/><path d="M12 17v4"/><path d="M6 3h12l-1 7a5 5 0 0 1-10 0L6 3z"/></svg>
+                    </div>
+                    <h3>Chef Specials</h3>
+                    <p>Signature recipes designed by award-winning chefs, refreshed with every season.</p>
+                </div>
+
+                <div class="feature" data-reveal>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.4 6.7 19.1l1-5.8-4.2-4.1 5.9-.9L12 3z"/></svg>
+                    </div>
+                    <h3>4.9-Star Service</h3>
+                    <p>Rated by thousands of guests who keep coming back for the food and the people.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+        <div class="container about-grid">
+            <div class="about-media" data-reveal>
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80"
+                     alt="Chef preparing food in the kitchen">
+                <div class="about-experience">
+                    <strong>12</strong>
+                    <span>Years of<br>Experience</span>
+                </div>
+            </div>
+
+            <div class="about-content" data-reveal>
+                <span class="eyebrow">Our Story</span>
+                <h2>A small kitchen with a big appetite for detail</h2>
+                <p>
+                    Savor&eacute; started as a family kitchen with one rule: never serve a
+                    dish we wouldn&rsquo;t eat ourselves. Today that rule still runs the pass.
+                </p>
+
+                <ul class="check-list">
+                    <li>Hand-picked ingredients from local farms</li>
+                    <li>Recipes tested for weeks before they hit the menu</li>
+                    <li>Zero preservatives, cooked fresh every single day</li>
+                    <li>Transparent pricing &mdash; no hidden charges</li>
+                </ul>
+
+                <div class="about-actions">
+                    <a href="#contact" class="btn btn-primary">Book a Table</a>
+                    <a href="#menu" class="btn btn-outline">See the Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section section-alt" id="reviews">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Guest Reviews</span>
+                <h2>What our customers say</h2>
+            </div>
+
+            <div class="review-grid">
+                <figure class="review" data-reveal>
+                    <div class="stars" aria-label="5 out of 5 stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    <blockquote>&ldquo;The lunch bowls arrive hot every single time. It has become our office default &mdash; nobody argues about where to eat anymore.&rdquo;</blockquote>
+                    <figcaption>
+                        <span class="avatar">AM</span>
+                        <span class="who"><strong>Ava Mitchell</strong><small>Office Manager</small></span>
+                    </figcaption>
+                </figure>
+
+                <figure class="review" data-reveal>
+                    <div class="stars" aria-label="5 out of 5 stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    <blockquote>&ldquo;Breakfast here is unreal. Fresh fruit, real coffee, eggs cooked perfectly. Worth waking up early for.&rdquo;</blockquote>
+                    <figcaption>
+                        <span class="avatar">JR</span>
+                        <span class="who"><strong>James Rivera</strong><small>Regular since 2023</small></span>
+                    </figcaption>
+                </figure>
+
+                <figure class="review" data-reveal>
+                    <div class="stars" aria-label="5 out of 5 stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    <blockquote>&ldquo;Dinner with the family feels special here. The menu changes with the season and the service is genuinely warm.&rdquo;</blockquote>
+                    <figcaption>
+                        <span class="avatar">SK</span>
+                        <span class="who"><strong>Sophia Khan</strong><small>Food Blogger</small></span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="contact">
+        <div class="container cta-inner" data-reveal>
+            <div>
+                <span class="eyebrow light">Get in touch</span>
+                <h2>Hungry? Your table is ready.</h2>
+                <p>Call us, drop by, or send a message &mdash; we reply within 15 minutes.</p>
+            </div>
+            <div class="cta-actions">
+                <a href="tel:+10001234567" class="btn btn-light">+1 (000) 123-4567</a>
+                <a href="mailto:hello@savore.com" class="btn btn-ghost-light">hello@savore.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo">Savor<span>&eacute;</span></a>
+                <p>Fresh breakfast, lunch and dinner, cooked daily and delivered hot to your door.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.2H7.4V13h2.4v8h3.7z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.6-2.4.7.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.9-2.6 1.1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.7a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5 0 2 1.4 3.7 3.3 4.1-.6.2-1.2.2-1.8.1a4.1 4.1 0 0 0 3.8 2.9A8.3 8.3 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.9c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.4z"/></svg></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon &ndash; Fri &nbsp; 7:00 AM &ndash; 10:00 PM</p>
+                <p>Saturday &nbsp; 8:00 AM &ndash; 11:00 PM</p>
+                <p>Sunday &nbsp; 9:00 AM &ndash; 9:00 PM</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>42 Green Avenue, Food District</p>
+                <p>hello@savore.com</p>
+                <p>+1 (000) 123-4567</p>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year">2026</span> Savor&eacute;. All rights reserved.</p>
+            <p>Cooked with care &mdash; served with pride.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
