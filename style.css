@@ -684,6 +684,33 @@ h3 { font-size: 1.35rem; }
 }
 
 /* =========================================================
+   HERO LETTER MOTION
+   ========================================================= */
+.hero-content h1 .letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(0.7em) rotate(6deg);
+    will-change: transform, opacity;
+}
+
+.hero-content h1.animate-letters .letter {
+    animation: letterIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(var(--i) * 45ms);
+}
+
+@keyframes letterIn {
+    0% {
+        opacity: 0;
+        transform: translateY(0.7em) rotate(6deg);
+    }
+    60% { opacity: 1; }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* =========================================================
    SCROLL REVEAL
    ========================================================= */
 [data-reveal] {

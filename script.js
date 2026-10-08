@@ -79,6 +79,56 @@
         revealItems.forEach(function (item) { item.classList.add("visible"); });
     }
 
+    /* Hero heading letter motion */
+    var heroTitle = document.querySelector(".hero-content h1");
+
+    if (heroTitle) {
+        var letterIndex = 0;
+
+        function splitLetters(node) {
+            Array.prototype.slice.call(node.childNodes).forEach(function (child) {
+                if (child.nodeType === 3) {
+                    var frag = document.createDocumentFragment();
+
+                    child.textContent.split("").forEach(function (ch) {
+                        if (ch === " ") {
+                            frag.appendChild(document.createTextNode(" "));
+                            return;
+                        }
+                        var span = document.createElement("span");
+                        span.className = "letter";
+                        span.style.setProperty("--i", letterIndex++);
+                        span.textContent = ch;
+                        frag.appendChild(span);
+                    });
+
+                    node.replaceChild(frag, child);
+                } else if (child.nodeType === 1 && child.tagName !== "BR") {
+                    splitLetters(child);
+                }
+            });
+        }
+
+        splitLetters(heroTitle);
+
+        if ("IntersectionObserver" in window) {
+            var heroObserver = new IntersectionObserver(
+                function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            heroTitle.classList.add("animate-letters");
+                            heroObserver.disconnect();
+                        }
+                    });
+                },
+                { threshold: 0.2 }
+            );
+            heroObserver.observe(heroTitle);
+        } else {
+            heroTitle.classList.add("animate-letters");
+        }
+    }
+
     /* Footer year */
     var year = document.getElementById("year");
     if (year) year.textContent = new Date().getFullYear();
